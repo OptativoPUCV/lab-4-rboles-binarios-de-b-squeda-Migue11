@@ -36,3 +36,32 @@ test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous 
     6 | char * _strdup(const char * str) {
       |        ^~~~~~~
 c561e59
+Sun, May  4, 2025  1:16:17 AM: 
+ treemap.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function 'insertTreeMap':
+treemap.c:53:16: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+   53 |         return NULL;
+      |                ^~~~
+treemap.c:51:6: note: declared here
+   51 | void insertTreeMap(TreeMap * tree, void* key, void * value){
+      |      ^~~~~~~~~~~~~
+treemap.c:57:16: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+   57 |         return NULL;
+      |                ^~~~
+treemap.c:51:6: note: declared here
+   51 | void insertTreeMap(TreeMap * tree, void* key, void * value){
+      |      ^~~~~~~~~~~~~
+treemap.c:65:16: warning: unused variable 'parent' [-Wunused-variable]
+   65 |     TreeNode * parent = NULL;
+      |                ^~~~~~
+treemap.c:64:16: warning: unused variable 'current' [-Wunused-variable]
+   64 |     TreeNode * current = tree->root;
+      |                ^~~~~~~
+test.c: At top level:
+test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+e3c32ea
