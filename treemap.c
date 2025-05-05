@@ -119,7 +119,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
     TreeNode* current = tree->root;
     while(current != NULL){
-        if(is_equal(tree, key, current->pair->key)){
+        if(is_equal(tree, key, current->pair->key)){ // haremos el ciclo hasta que la key sea igual a la key del nodo actual    
             tree->current = current;
             return current->pair;
         }else if(tree->lower_than(key, current->pair->key)){
@@ -142,7 +142,7 @@ Pair * firstTreeMap(TreeMap * tree) {
         return NULL;
     }
     tree->current = minimum(tree->root);
-    return tree->current->pair;
+    //return tree->current->pair;
 
 }
 
@@ -152,7 +152,7 @@ Pair * nextTreeMap(TreeMap * tree){
     }
     if (tree->current->right != NULL){
         tree->current = minimum(tree->current->right);
-        return tree->current->pair;
+        //return tree->current->pair;
     }else{
         TreeNode* parent = tree->current->parent;
         while (parent != NULL && parent->right == tree->current){
@@ -160,6 +160,6 @@ Pair * nextTreeMap(TreeMap * tree){
             parent = parent->parent;
         }
         tree->current = parent;
-        return tree->current->pair;
+        //return tree->current->pair;
     }
 }   
