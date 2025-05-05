@@ -132,7 +132,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key){
-
+    return NULL;
 }
 
 
@@ -142,7 +142,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 //     }
 //     tree->current = minimum(tree->root);
 //     return tree->current->pair;
-
+    return NULL;
 }
 
  Pair * nextTreeMap(TreeMap * tree){
@@ -160,4 +160,5 @@ Pair * firstTreeMap(TreeMap * tree) {
 //         tree->current = current->parent; 
 //         return tree->current->pair;
 //     }
+    return NULL;
 }   
