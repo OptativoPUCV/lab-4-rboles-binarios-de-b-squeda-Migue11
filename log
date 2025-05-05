@@ -241,3 +241,28 @@ test.c:503:5: warning: 'main' defined but not used [-Wunused-function]
   503 | int main( int argc, char *argv[] ) {
       |     ^~~~
 845dcd6
+Mon, May  5, 2025 12:00:36 AM: 
+Compilation failed
+test.c: In function 'nextTreeMap':
+test.c:503:5: warning: 'main' is normally a non-static function [-Wmain]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+In file included from test.c:4:
+treemap.c: In function 'searchTreeMap':
+treemap.c:132:1: warning: control reaches end of non-void function [-Wreturn-type]
+  132 | }
+      | ^
+treemap.c: In function 'upperBound':
+treemap.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+  137 | }
+      | ^
+test.c: In function 'nextTreeMap':
+test.c:608: warning: control reaches end of non-void function [-Wreturn-type]
+test.c: At top level:
+test.c:503:5: warning: 'main' defined but not used [-Wunused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+f1c0449
