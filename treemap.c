@@ -142,7 +142,7 @@ Pair * firstTreeMap(TreeMap * tree) {
         return NULL;
     }
     tree->current = minimum(tree->root);
-    //return tree->current->pair;
+    return tree->current->pair;
 
 }
 
@@ -152,7 +152,7 @@ Pair * nextTreeMap(TreeMap * tree){
     }
     if (tree->current->right != NULL){
         tree->current = minimum(tree->current->right);
-        //return tree->current->pair;
+        return tree->current->pair;
     }else{
         TreeNode* parent = tree->current->parent;
         while (parent != NULL && parent->right == tree->current){
@@ -160,6 +160,6 @@ Pair * nextTreeMap(TreeMap * tree){
             parent = parent->parent;
         }
         tree->current = parent;
-        //return tree->current->pair;
-    }
+        return tree->current->pair;
+
 }   
