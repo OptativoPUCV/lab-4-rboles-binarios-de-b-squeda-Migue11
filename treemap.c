@@ -50,31 +50,31 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 void insertTreeMap(TreeMap * tree, void* key, void * value){
 
-    TreeNode *current = tree->root; // asignamos al current el root del arbol
+    // TreeNode *current = tree->root; // asignamos al current el root del arbol
 
-    while (1){
-        if (is_equal(tree, key, current->pair->key)){ // retornamos si es que ya existe
-            return;
-        }
+    // while (1){
+    //     if (is_equal(tree, key, current->pair->key)){ // retornamos si es que ya existe
+    //         return;
+    //     }
 
-        if (tree->lower_than(key, current->pair->key)){
-            if (current->left == NULL){ // si el hijo izquierdo es nulo, creamos el nodo
-                current->left = createTreeNode(key, value);
-                current->left->parent = current; // asignamos el padre al nuevo nodo
-                tree->current = current->left; // asignamos el current al nuevo nodo (hijo izquierdo)
-                return;
-            }
-            current = current->left;
-        }else {
-            if (current->right == NULL) { // aqui creamos el nodo si el hijo derecho es nulo
-                current->right = createTreeNode(key, value); // creamos el nodo
-                current->right->parent = current; // asignamos el padre al nuevo nodo
-                tree->current = current->right; // asignamos el current al nuevo nodo (hijo derecho)
-                return;
-            }
-            current = current->right;
-        }
-    }
+    //     if (tree->lower_than(key, current->pair->key)){
+    //         if (current->left == NULL){ // si el hijo izquierdo es nulo, creamos el nodo
+    //             current->left = createTreeNode(key, value);
+    //             current->left->parent = current; // asignamos el padre al nuevo nodo
+    //             tree->current = current->left; // asignamos el current al nuevo nodo (hijo izquierdo)
+    //             return;
+    //         }
+    //         current = current->left;
+    //     }else {
+    //         if (current->right == NULL) { // aqui creamos el nodo si el hijo derecho es nulo
+    //             current->right = createTreeNode(key, value); // creamos el nodo
+    //             current->right->parent = current; // asignamos el padre al nuevo nodo
+    //             tree->current = current->right; // asignamos el current al nuevo nodo (hijo derecho)
+    //             return;
+    //         }
+    //         current = current->right;
+    //     }
+    // }
 }
        
 
