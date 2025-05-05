@@ -109,7 +109,7 @@ void eraseTreeMap(TreeMap * tree, void* key){
 
 
 
-// Pair * searchTreeMap(TreeMap * tree, void* key) {
+Pair * searchTreeMap(TreeMap * tree, void* key) {
 //     if (tree == NULL || tree->root == NULL){
 //         return NULL;
 //     }
@@ -125,7 +125,7 @@ void eraseTreeMap(TreeMap * tree, void* key){
 //         }    
 //     }
 
-// }
+}
 
 
 Pair * upperBound(TreeMap * tree, void* key){

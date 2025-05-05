@@ -534,3 +534,8 @@ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw
 C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:161:(.text+0x9ba): undefined reference to `searchTreeMap'
 collect2.exe: error: ld returned 1 exit status
 8b95059
+Mon, May  5, 2025  6:54:18 AM: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+9a45d48
