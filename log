@@ -395,3 +395,42 @@ test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous 
     6 | char * _strdup(const char * str) {
       |        ^~~~~~~
 4b21f63
+Mon, May  5, 2025  6:52:01 AM: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `eraseTreeMap':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/treemap.c:101:(.text+0x367): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `search_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:104:(.text+0x76c): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `search_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:122:(.text+0x816): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `search_test3':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:141:(.text+0x8c4): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `search_test4':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:161:(.text+0x995): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `first_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:318:(.text+0xfb6): undefined reference to `firstTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `first_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:340:(.text+0x109c): undefined reference to `firstTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `next_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:360:(.text+0x118d): undefined reference to `nextTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `next_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:380:(.text+0x122b): undefined reference to `nextTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:388:(.text+0x127b): undefined reference to `nextTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:396:(.text+0x12c8): undefined reference to `nextTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `next_test3':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:414:(.text+0x13ad): undefined reference to `nextTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `ub_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:427:(.text+0x141d): undefined reference to `upperBound'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `ub_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:447:(.text+0x14f7): undefined reference to `upperBound'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `ub_test3':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:468:(.text+0x15f6): undefined reference to `upperBound'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\ccUwA3e2.o: in function `ub_test4':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:489:(.text+0x16f5): undefined reference to `upperBound'
+collect2.exe: error: ld returned 1 exit status
+309bb92
