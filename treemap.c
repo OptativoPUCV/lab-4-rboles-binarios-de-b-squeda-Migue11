@@ -142,7 +142,7 @@ Pair * upperBound(TreeMap * tree, void* key){
 
 // }
 
-// Pair * nextTreeMap(TreeMap * tree){
+ Pair * nextTreeMap(TreeMap * tree){
 //     if (tree == NULL || tree->current == NULL){
 //         return NULL;
 //     }
@@ -157,4 +157,4 @@ Pair * upperBound(TreeMap * tree, void* key){
 //         tree->current = current->parent; 
 //         return tree->current->pair;
 //     }
-// }   
+}   

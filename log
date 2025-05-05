@@ -470,3 +470,35 @@ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw
 C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:414:(.text+0x13bc): undefined reference to `nextTreeMap'
 collect2.exe: error: ld returned 1 exit status
 7aff1e9
+Mon, May  5, 2025  6:53:18 AM: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+In file included from test.c:4:
+treemap.c: In function 'upperBound':
+treemap.c:133:1: warning: control reaches end of non-void function [-Wreturn-type]
+  133 | }
+      | ^
+treemap.c: In function 'nextTreeMap':
+treemap.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+  160 | }
+      | ^
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `eraseTreeMap':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/treemap.c:101:(.text+0x367): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `search_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:104:(.text+0x786): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `search_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:122:(.text+0x830): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `search_test3':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:141:(.text+0x8de): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `search_test4':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:161:(.text+0x9af): undefined reference to `searchTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `first_test1':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:318:(.text+0xfd0): undefined reference to `firstTreeMap'
+C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\User\AppData\Local\Temp\cc25iXMz.o: in function `first_test2':
+C:/Users/User/OneDrive/Escritorio/Programación/Estructura/lab-4-rboles-binarios-de-b-squeda-Migue11/test.c:340:(.text+0x10b6): undefined reference to `firstTreeMap'
+collect2.exe: error: ld returned 1 exit status
+c859de4
